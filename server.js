@@ -16,7 +16,9 @@ app.get('/policy', (req, res) => {
     res.sendFile(__dirname + '/views/policy.html');
 });
 
+
+const port = process.env.PORT || 3000;
 // Start the server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server is running on port 3000');
 });
